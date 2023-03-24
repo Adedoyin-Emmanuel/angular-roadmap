@@ -1,27 +1,24 @@
-# MyApp
+# Learning Angular From Zero To Hero
+ Hi everyone, here is a repo I made to document my Angular journey, I would be updating this repo from time to time showing what I have learnt... Let's go.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.3.
 
-## Development server
+ ## What is Angular?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ Angular is a frontend framework for building web applications. It is a framework that is was built using **Typescript** which allows us to write clean and strict codes. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## What I have learnt so far..
 
-## Build
+1. Folder navigations
+2. Command line operations using ng
+3. Templates, Directives, Modules, Dependency injection, Services Lifecycle hooks, passing data from parent components to child components.
+   
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Projects to build 
 
-## Running unit tests
+1. A book purchase store.
+2. A real time chat application with firebase.
+   
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   
