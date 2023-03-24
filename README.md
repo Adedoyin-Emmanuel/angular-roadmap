@@ -11,7 +11,9 @@
 
 1. Folder navigations
 2. Command line operations using ng
-3. Templates, Directives, Modules, Dependency injection, Services Lifecycle hooks, passing data from parent components to child components.
+3. Templates, Directives, Modules, Dependency injection, Services, Lifecycle hooks, passing data from parent components to child components.
+4. Two way binding using ngModel
+5. Importing Bootstrap into my project.
    
 
 ## Projects to build 
