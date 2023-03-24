@@ -4,7 +4,7 @@
 
  ## What is Angular?
 
- Angular is a frontend framework for building web applications. It is a framework that is was built using **Typescript** which allows us to write clean and strict codes. 
+ Angular is a frontend framework for building web applications. It is a framework that was built using **Typescript** which allows us to write clean and strict codes. 
 
 
 ## What I have learnt so far..

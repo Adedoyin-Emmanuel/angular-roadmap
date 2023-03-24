@@ -1,6 +1,17 @@
 import { Component } from '@angular/core';
 import { CoursesService } from './courses.service';
 
+interface pipes
+{
+  uppercaseName:string;
+  lowercaseName:string;
+  titlecaseName:string;
+  numbers: number;
+  currency: string | number;
+  decimal: number;
+}
+
+
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -9,6 +20,14 @@ import { CoursesService } from './courses.service';
 export class CoursesComponent {
   allCourses: string[] = [];
   username = "";
+  pipes: pipes = {
+    "uppercaseName": "adedoyin emmanuel"  ,
+    "lowercaseName": "ADEDOYIN EMMANUEL",
+    "titlecaseName": "adedoyin emmanuel",
+    "numbers": 3000000,
+    "currency": 1000,
+    "decimal": 3.142
+  };
   
   constructor(courses: CoursesService) {
     this.allCourses = courses.getCourses();
