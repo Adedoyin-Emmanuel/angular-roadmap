@@ -1,1 +1,15 @@
-<p>courses works!</p>
+<h2>List of courses</h2>
+
+<section *ngFor="let course of allCourses">
+    <ul>
+        <li>{{course}}</li>
+    </ul>
+</section>
+
+<h2>Enter your username</h2>
+
+<input type="text" placeholder="Enter your username" [(ngModel)]="username" (keypress)= "handleChange()">
+
+
+
+<p>your username is {{username}}</p>
