@@ -1,4 +1,4 @@
-<h2>List of courses</h2>
+<h2 class="fw-bold p-2">List of courses</h2>
 
 <section *ngFor="let course of allCourses">
   <ul>
@@ -6,18 +6,21 @@
   </ul>
 </section>
 
-<h2>Enter your username</h2>
+<h2 class="fw-bold p-2">Enter your username</h2>
 
-<input
+<section class="w-50">
+  <input
   type="text"
   placeholder="Enter your username"
   [(ngModel)]="username"
   (keypress)="handleChange()"
+  class="form-control"
 />
+</section>
 
-<p>your username is {{ username }}</p>
+<p class="text-capitalize p-2">your username is {{ username }}</p>
 
-<h3 class="fw-bold">learning pipes | in Angular</h3>
+<h3 class="fw-bold p-2 text-capitalize">learning pipes | in Angular</h3>
 <ul>
   <li>{{ pipes.uppercaseName | uppercase }}</li>
   <li>{{ pipes.lowercaseName | lowercase }}</li>
