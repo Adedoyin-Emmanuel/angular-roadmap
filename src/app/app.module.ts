@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesService } from './courses/courses.service';
 import { FormsModule } from '@angular/forms';
+import { CoursesPipe } from './courses/courses.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    CoursesPipe
   ],
   imports: [
     BrowserModule,

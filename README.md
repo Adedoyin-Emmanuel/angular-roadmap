@@ -14,7 +14,14 @@
 3. Templates, Directives, Modules, Dependency injection, Services, Lifecycle hooks, passing data from parent components to child components.
 4. Two way binding using ngModel
 5. Importing Bootstrap into my project.
+6. How to use pipes and creating your own custom pipes.
    
+
+## What is a pipe?
+
+A pipe is a building block of **Angular** that is used to format data. We have some pipes which are builtIn pipes in Angular. Like currency, number, uppercase, lowercase, titlecase pipes and so forth. We can also create our own custom pipes.
+
+
 
 ## Projects to build 
 

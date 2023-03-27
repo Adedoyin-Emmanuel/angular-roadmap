@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CoursesService } from './courses.service';
-
 interface pipes
 {
   uppercaseName:string;
@@ -9,6 +8,7 @@ interface pipes
   numbers: number;
   currency: string | number;
   decimal: number;
+  longText:string;
 }
 
 
@@ -26,7 +26,8 @@ export class CoursesComponent {
     "titlecaseName": "adedoyin emmanuel",
     "numbers": 3000000,
     "currency": 1000,
-    "decimal": 3.142
+    "decimal": 3.142,
+    "longText":"lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, lorem sed"
   };
   
   constructor(courses: CoursesService) {
