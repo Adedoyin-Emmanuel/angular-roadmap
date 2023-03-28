@@ -8,13 +8,15 @@ import { CoursesService } from './courses/courses.service';
 import { FormsModule } from '@angular/forms';
 import { CoursesPipe } from './courses/courses.pipe';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CoursesPipe,
-    StarRatingComponent
+    StarRatingComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
