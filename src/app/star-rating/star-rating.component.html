@@ -1,4 +1,4 @@
-<section class="star-rating-section bg-primary p-5">
-hello world
-  <i class="bi bi-star"></i>
+<h3 class="fw-bold fs-3">add an icon that change state on click</h3>
+<section class="star-rating-section p-5">
+  <i  class="fs-1 text-dark bi bi-star-fill" [class.bi-star]="isClicked"(click) = "handleClick()"></i>
 </section>
