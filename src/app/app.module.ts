@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { CoursesPipe } from './courses/courses.pipe';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { InputComponent } from './input/input.component';
+import { InputPipe } from './input/input.pipe';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,11 @@ import { InputComponent } from './input/input.component';
     CoursesComponent,
     CoursesPipe,
     StarRatingComponent,
-    InputComponent
+    InputComponent,
+    InputPipe,
+
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

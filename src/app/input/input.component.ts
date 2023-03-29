@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
+  text:string = '';
 
+
+  handleChange()
+  {
+    console.log(this.text);
+  }
 }
