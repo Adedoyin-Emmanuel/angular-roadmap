@@ -1,9 +1,9 @@
-import { TitleCasePipe } from '@angular/common';
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'input',
 })
+
 export class InputPipe implements PipeTransform {
   transform(value: string): any {
     if (!value) return null;
