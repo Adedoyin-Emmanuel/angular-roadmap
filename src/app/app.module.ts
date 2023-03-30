@@ -10,6 +10,8 @@ import { CoursesPipe } from './courses/courses.pipe';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { InputComponent } from './input/input.component';
 import { InputPipe } from './input/input.pipe';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { InputPipe } from './input/input.pipe';
     StarRatingComponent,
     InputComponent,
     InputPipe,
+    UsersComponent,
+    UserComponent,
 
   ],
   
