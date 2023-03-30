@@ -4,9 +4,8 @@ import userInterface from '../types/user-type';
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class UsersService {
   constructor() {}
-
   allUsers: userInterface[] = [
     {
       name: 'Adedoyin Emmanuel',
@@ -18,13 +17,10 @@ export class UserService {
       name: 'Adedoyin Israel',
       age: 11,
       hobbies: ['drawing, eating, gaming'],
-    }
+    },
   ];
 
-
-
-  getAllUsers():userInterface[]
-  {
+  getAllUsers(): userInterface[] {
     return this.allUsers;
   }
 }

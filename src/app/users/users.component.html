@@ -1,1 +1,5 @@
-<p>users works!</p>
+<h3 class="text-capitalize fw-bold">all users [{{addedUsers.length}}]</h3>
+
+<ng-container *ngFor="let user of allUsers">
+  <app-user [user]="user" (userEmitter)="handleClick($event)"></app-user>
+</ng-container>
