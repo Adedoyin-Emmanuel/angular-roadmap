@@ -1,0 +1,13 @@
+.like-icon:hover
+{
+  cursor:pointer;
+}
+
+.heart-empty
+{
+  color:#ccc;
+}
+.heart-filled
+{
+  color:deeppink;
+}

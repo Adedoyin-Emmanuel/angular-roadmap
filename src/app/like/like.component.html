@@ -1,1 +1,5 @@
-<p>like works!</p>
+<h3 class="fw-bold text-capitalize p-3">twitter likes component clone</h3>
+<section class="likes-section m-4">
+  <i class="like-icon fs-4  bi-heart-fill" [class.heart-filled]="likeComponent.isActive" [class.heart-empty]="!likeComponent.isActive" (click)="handleClick()" ></i>
+  <span class="fs-4 p-3">{{likeComponent.likeCount}}</span>
+</section>
