@@ -1,4 +1,9 @@
 <h3 class="fw-bold fs-3 text-capitalize">add an icon that change state on click</h3>
 <section class="star-rating-section p-5">
-  <i  class="fs-1 text-dark bi bi-star-fill" [class.bi-star]="isClicked"(click) = "handleClick()"></i>
+  <i  class="fs-1 text-dark bi bi-star"
+  [ngClass]="{
+    'bi-star': !isClicked,
+    'bi-star-fill': isClicked
+  }"
+  (click) = "handleClick()"></i>
 </section>

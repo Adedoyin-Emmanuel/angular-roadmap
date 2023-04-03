@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./star-rating.component.css'],
 })
 export class StarRatingComponent {
-  isClicked = true;
+  isClicked = false;
 
   handleClick() {
     this.isClicked = !this.isClicked;
