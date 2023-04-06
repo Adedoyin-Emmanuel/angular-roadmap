@@ -14,15 +14,19 @@ Angular is a frontend framework for building web applications. It is a framework
 4. Two way binding using ngModel
 5. Importing Bootstrap into my project.
 6. How to use pipes and creating your own custom pipes.
-7. Creating awesome custom pipes. [I created a custom pipe that converts prepositions to lowecase in a sentence. This is the challenge Mosh gave at the end of his pipe in Angular tutorials. Though I wrote some spaghetti  codes]
+7. Creating awesome custom pipes. [I created a custom pipe that converts prepositions to lowecase in a sentence. This is the challenge Mosh gave at the end of his pipe in Angular tutorials. Though I wrote some spaghetti codes]
 8. Learnt more Angular directives, ngFor, ngIf, ngClass, ngSwitch they are awesome.
+9. Leart the ngStyle directive, and the [style] binding syntax
+
+Since it was kind of hard wraping my head about creating custom pipes in Angular, I decided to teach how to do create custom pipes.
 
 ## What is a pipe?
 
 A pipe is a building block of **Angular** that is used to format data. We have some pipes which are builtIn pipes in Angular. Like currency, number, uppercase, lowercase, titlecase pipes and so forth. We can also create our own custom pipes.
 
 ## How to create a custom pipe?
-We could crate a custom pipe using the angular cli with the command *ng generate pipe* **nameofpipe** or the shorter command *ng g p* **nameofpipe** but to understand stuffs better, i would use the manual method.
+
+We could crate a custom pipe using the angular cli with the command _ng generate pipe_ **nameofpipe** or the shorter command _ng g p_ **nameofpipe** but to understand stuffs better, i would use the manual method.
 
 1. Navigate to the component directory where you want to create the pipe.
 2. Create a file with the convention _componentname.pipe.ts_
@@ -77,43 +81,33 @@ const summarizeFunction = (text: string, textLimit?: number): string => {
 ```
 
 ```ts
-import {Pipe, PipeTransfrom} from "@angular/core";
-
+import { Pipe, PipeTransfrom } from "@angular/core";
 
 //declare the pipe name
 
 @Pipe({
-    name: "nameofpipe"
+  name: "nameofpipe",
 })
 
-
 //create the pipe logic
+export class PipeName implements PipeTransfrom {
+  transform(value: string, textLimit?: number): string {
+    if (!value) return null;
+    //check if the textLimit is defined else set default limit to 50
+    const actualLimit = textLimit ? textLimit : 50;
 
-export class PipeName implements PipeTransfrom
-{
-    transform(value:string, textLimit?:number): string
-    {
-        if(!value)
-            return null;
-         //check if the textLimit is defined else set default limit to 50
-        const actualLimit = textLimit ? textLimit : 50;
-    
-        return value.substring(0, actualLimit);
-    }
+    return value.substring(0, actualLimit);
+  }
 }
-
 ```
 
 Lastly, don't forget to import your pipe in the app module under declarations array.
-
-
 
 ## Projects to build
 
 1. A book purchase store.
 2. A real time chat application with firebase.
 
-
-
+```
 
 ```

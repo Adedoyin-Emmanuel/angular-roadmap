@@ -14,6 +14,21 @@ export class AppComponent {
 
   currentFruitSelected = this.selectRandomFruit(this.anotherFruit);
 
+  buttonLoading = true;
+
+  buttonError = false;
+
+
+  toggleButtonState(): void | null
+  {
+    this.buttonLoading = !this.buttonLoading;
+   // this.buttonError = !this.buttonError;
+  }
+
+  toggleButtonErrorState(): void | null
+  {
+    this.buttonError = !this.buttonError;
+  }
   selectRandomFruit(fruitsArray:string[])
   {
     return fruitsArray[Math.floor(Math.random() * fruitsArray.length)]
@@ -25,4 +40,6 @@ export class AppComponent {
     this.currentFruitSelected = this.selectRandomFruit(this.anotherFruit);
 
   }
+
+
 }

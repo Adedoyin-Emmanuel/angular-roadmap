@@ -3,17 +3,23 @@
 <app-courses></app-courses>
 <app-star-rating></app-star-rating>
 <app-input></app-input>
-<br/>
-<br/>
-<br/>
-<h3 class="fw-bold text-capitalize p-2">passing data from parent to child and vice versa</h3>
-<app-users ></app-users>
+<br />
+<br />
+<br />
+<h3 class="fw-bold text-capitalize p-2">
+  passing data from parent to child and vice versa
+</h3>
+<app-users></app-users>
 <app-like></app-like>
 
-<h3 class="text-capitalize fw-bold">rendering elements with the ngSwitch Directive</h3>
+<h3 class="text-capitalize fw-bold">
+  rendering elements with the ngSwitch Directive
+</h3>
 
-
-<p class="">current fruit is <span class="fw-bold m-0 p-0">{{currentFruitSelected}}</span></p>
+<p class="">
+  current fruit is
+  <span class="fw-bold m-0 p-0">{{ currentFruitSelected }}</span>
+</p>
 
 <div [ngSwitch]="currentFruitSelected" class="p-0 m-0">
   <div *ngSwitchCase="'mangoes'" class="text-capitalize">i love mangoes</div>
@@ -22,6 +28,47 @@
   <div *ngSwitchDefault>No fruit was chosen</div>
 </div>
 
-<button type="button" (click)="toggleFruits()" class="btn btn-primary text-capitalize">click to Toggle Fruits</button>
+<button
+  type="button"
+  (click)="toggleFruits()"
+  class="btn btn-primary text-capitalize"
+>
+  click to Toggle Fruits
+</button>
 
+<h3 class="fw-bold text-capitalize">
+  changing componenent style with style binding and ngClass
+</h3>
 
+<div class="p-0 m-0">
+  <p>A button that toggles to loading state or growing state</p>
+
+  <button
+    class="btn btn-primary d-flex align-items-center justify-content-between text-capitalize p-2"
+    (click)="toggleButtonState()"
+  >
+    <span
+      class="m-0 mx-2"
+      [ngClass]="{
+        'spinner-border': buttonLoading,
+        'spinner-grow': !buttonLoading
+      }"
+      [style.width]="'20px'"
+      [style.height]="'20px'"
+    ></span>
+    change animation
+  </button>
+</div>
+
+<h3 class="fw-bold text-capitalize">
+  changing componenent style with [ngStyle] directive
+</h3>
+
+<div class="m-0 p-0">
+  <p>A button that changes to an error button on click</p>
+
+  <button class="btn p-2 text-light" [ngStyle]="{
+    backgroundColor: (buttonError) ? 'tomato' : ' #0d6efd'
+  }"
+  (click)="toggleButtonErrorState()">Click me!</button>
+</div>
