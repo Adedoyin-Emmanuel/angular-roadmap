@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  fruits: string[] = ["apple", "orange", "mangoes", "carrots", "cucumber", "cashew", "cherry", "strawberry"];
+
+  anotherFruit: string[] = ["apple", "orange", "mangoes"];
+
+  currentFruitSelected = this.selectRandomFruit(this.anotherFruit);
+
+  selectRandomFruit(fruitsArray:string[])
+  {
+    return fruitsArray[Math.floor(Math.random() * fruitsArray.length)]
+  }
+
+
+  toggleFruits (): void | null
+  {
+    this.currentFruitSelected = this.selectRandomFruit(this.anotherFruit);
+
+  }
 }

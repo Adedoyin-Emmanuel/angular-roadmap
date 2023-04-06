@@ -9,3 +9,19 @@
 <h3 class="fw-bold text-capitalize p-2">passing data from parent to child and vice versa</h3>
 <app-users ></app-users>
 <app-like></app-like>
+
+<h3 class="text-capitalize fw-bold">rendering elements with the ngSwitch Directive</h3>
+
+
+<p class="">current fruit is <span class="fw-bold m-0 p-0">{{currentFruitSelected}}</span></p>
+
+<div [ngSwitch]="currentFruitSelected" class="p-0 m-0">
+  <div *ngSwitchCase="'mangoes'" class="text-capitalize">i love mangoes</div>
+  <div *ngSwitchCase="'apple'" class="text-capitalize">i love apples</div>
+  <div *ngSwitchCase="'orange'" class="text-capitalize">i love orange</div>
+  <div *ngSwitchDefault>No fruit was chosen</div>
+</div>
+
+<button type="button" (click)="toggleFruits()" class="btn btn-primary text-capitalize">click to Toggle Fruits</button>
+
+
