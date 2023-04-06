@@ -15,6 +15,7 @@ Angular is a frontend framework for building web applications. It is a framework
 5. Importing Bootstrap into my project.
 6. How to use pipes and creating your own custom pipes.
 7. Creating awesome custom pipes. [I created a custom pipe that converts prepositions to lowecase in a sentence. This is the challenge Mosh gave at the end of his pipe in Angular tutorials. Though I wrote some spaghetti  codes]
+8. Learnt more Angular directives, ngFor, ngIf, ngClass, ngSwitch they are awesome.
 
 ## What is a pipe?
 
