@@ -13,6 +13,7 @@ import { InputPipe } from './input/input.pipe';
 import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { LikeComponent } from './like/like.component';
+import { NameComponent } from './name/name.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LikeComponent } from './like/like.component';
     UsersComponent,
     UserComponent,
     LikeComponent,
+    NameComponent,
 
   ],
   

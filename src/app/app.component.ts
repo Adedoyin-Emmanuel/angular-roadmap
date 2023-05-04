@@ -42,4 +42,12 @@ export class AppComponent {
   }
 
 
+
+  handleSubmit(form:any, others:any)
+  {
+    console.log(form);
+    console.log(others);
+  }
+
+
 }

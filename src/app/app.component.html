@@ -72,3 +72,49 @@
   }"
   (click)="toggleButtonErrorState()">Click me!</button>
 </div>
+
+<h3 class="text-capitalize fw-bold">
+  learning template driven forms
+</h3>
+
+
+<form class="m-0 " ngForm #form = "ngForm"  (submit)="handleSubmit(form,password)">
+
+
+<section ngModelGroup="contact" #contact="ngModelGroup" class="m-0">
+    <section class="form-group">
+      <label for="username" class="text-capitalze"> Enter your username</label>
+
+      <input type="text" required class="form-control"  ngModel #usernameInput="ngModel"  placeholder="username" name="username"/>
+      <div class="alert alert-danger text-capitalize" *ngIf="!usernameInput.valid && usernameInput.touched">username is required</div>
+  </section>
+
+
+  <section class="form-group">
+      <label for="password" class="text-capitalze"> Enter your password</label>
+
+      <input type="password" required minlength="8" maxlength="10" class="form-control"  ngModel  name="password" #password="ngModel"  placeholder="password"/>
+      <div class="alert alert-danger text-capitalize" *ngIf="!password.valid && password.touched">
+      </div>
+
+  </section>
+
+</section>
+<section class="form-group">
+      <label for="password" class="text-capitalze">
+
+      <input type="checkbox" class="form-check-label" ngModel name="rememberMe"/> Remember me
+
+
+      </label>
+
+
+  </section>
+  <p class="text-center">{{form.value | json}}</p>
+
+  <section class="form-group">
+      <button class="btn btn-primary p-2 text-capitalize">submit form</button>
+  </section>
+
+
+</form>
